@@ -12,5 +12,5 @@ resource "aws_route53_record" "rds_cname" {
   name    = var.rds_record_name
   type    = "CNAME"
   ttl     = 60
-  records = [module.rds.db_instance_endpoint]
+  records = [split(":", module.rds.db_instance_endpoint)[0]]
 }
