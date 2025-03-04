@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: konfio-enterprise-query-service
+  labels:
+    app: konfio-enterprise-query-service
+spec:
+  replicas: 1 # Number of pods
+  selector:
+    matchLabels:
+      app: konfio-enterprise-query-service
+  template:
+    metadata:
+      labels:
+        app: konfio-enterprise-query-service
+    spec:
+      containers:
+        - name: konfio-enterprise-query-service
+          image: manuelrojas19/konfio-enterprise-query-service:1.3 # Replace with your image
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NODE_ENV
+              value: "production"
+            - name: DATABASE_HOST
+              value: "query.rds.db.konfio.enterprise.com"
+            - name: DATABASE_PORT
+              value: "5432"
+            - name: DATABASE_NAME
+              value: "enterprisedb"
+            - name: DATABASE_USER
+              value: "postgres"
+            - name: DATABASE_PASSWORD
+              value: "postgres"
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+            requests:
+              cpu: "250m"
+              memory: "128Mi"
