@@ -16,6 +16,9 @@ This project is designed to simplify the deployment of an EKS cluster and a Mong
 ### RDS Database
 - **Rds Deployment**: Deploys a RDDS instance on AWS.
 
+### Route 53 configuration
+- **Route 53 Records**: Records to easily connect to rds instance.
+
 ### General Features
 - **Scalability**: Easily scale the Kubernetes cluster and MongoDB instances based on workload requirements.
 - **High Availability**: Leverages AWS services to ensure high availability and fault tolerance.
