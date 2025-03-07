@@ -28,6 +28,10 @@ This project is designed to simplify the deployment of an EKS cluster and a Mong
 - **AWS CLI**: [Install and configure AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) with your AWS credentials.
 - **MongoDB Self Signed Certificates**: [Create x.509 Certificates](https://github.com/manuelrojas19/aws-infra-k8s-mongo/blob/main/docs/certificates.md): for MongoDB.
 
+## Infraestructure Architecture Diagram
+
+![Arch](architecture.jpg)
+
 ## Usage
 
 1. **Clone the repository**:
