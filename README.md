@@ -71,8 +71,7 @@ The configuration is managed through the `variables.tf` file. Key parameters inc
 
 ## Aplication Deployment
 
-Once the infraestructure is provided and return a cluster information you can use the following commands to provision application
-
+Once the infraestructure is provided and return a cluster information you can use the following commands to provision application. Currently this relies on my Docker Public Repository making use of manualy provisioned images from this repo https://github.com/manuelrojas19/konfio-enterprise-query-service, a better approach would include make use of a private repository and automatize the image creationg whenever pipeline on API repo runs
 
 1. **Setup Kubectl CLI**:
     ```sh
