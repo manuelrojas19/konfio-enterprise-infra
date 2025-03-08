@@ -21,7 +21,7 @@ This project is designed to simplify the deployment of an EKS cluster and a Mong
 - **Route 53 Records**: Records to easily connect to rds instance.
 
 ### General Features
-- **Scalability**: Easily scale the Kubernetes cluster and MongoDB instances based on workload requirements.
+- **Scalability**: Easily scale the Kubernetes cluster and RDS instances based on workload requirements.
 - **High Availability**: Leverages AWS services to ensure high availability and fault tolerance.
 - **Security**: Implements security groups, IAM roles, and other security measures to protect the infrastructure.
 - **Automation**: Uses Terraform to automate the entire setup, making it reproducible and manageable through code.
