@@ -1,4 +1,4 @@
-# AWS EKS MongoDB Infrastructure
+# konfio-enterprise-infra
 
 This Terraform project automates the provisioning of a robust and scalable infrastructure on AWS. It sets up an Amazon Elastic Kubernetes Service (EKS) cluster and deploys a RDS database, ensuring a high-performance environment for containerized applications and data management, also includes some Kubernetes template files to deploy a contanarized application exposing and load balancer to access through internet.
 
