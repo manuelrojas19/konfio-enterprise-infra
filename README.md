@@ -4,7 +4,7 @@ This Terraform project automates the provisioning of a robust and scalable infra
 
 ## Introduction
 
-This project is designed to simplify the deployment of an EKS cluster and a MongoDB database on AWS. By using Terraform, the entire setup is automated, making it reproducible and manageable through code.
+This project is designed to simplify the deployment of an EKS cluster and a RDS database on AWS. By using Terraform, the entire setup is automated, making it reproducible and manageable through code.
 
 ## Features
 
@@ -67,7 +67,7 @@ The configuration is managed through the `variables.tf` file. Key parameters inc
 - **AWS Region**: The AWS region where the resources will be deployed.
 - **Cluster Name**: The name of the EKS cluster.
 - **Node Instance Type**: The instance type for the worker nodes.
-- **RDS Configuration**: Parameters for MongoDB deployment, such as instance size and backup settings.
+- **RDS Configuration**: Parameters for RDS deployment, such as instance size and backup settings.
 
 ## Aplication Deployment
 
