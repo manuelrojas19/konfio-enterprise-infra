@@ -9,7 +9,8 @@ This project is designed to simplify the deployment of an EKS cluster and a Mong
 ## Features
 
 ### Amazon EKS Cluster
-- **EKS Cluster Creation**: Creates an EKS cluster for running Kubernetes applications.
+- **Basic Network Infra**: Creating an isolated VPC, subnets and security group config for secure deployment over aws us-east-1 region.
+- **EKS Cluster Creation**: Creates an EKS cluster for running Kubernetes applications, including basic setup of policies and aws roles.
 - **Worker Nodes Configuration**: Configures worker nodes for the cluster.
 - **Networking Setup**: Sets up networking, including VPC, subnets, and security groups.
 
@@ -40,7 +41,7 @@ This project is designed to simplify the deployment of an EKS cluster and a Mong
 1. **Clone the repository**:
     ```sh
     git clone https://github.com/manuelrojas19/konfio-enterprise-infra
-    cd aws-infra-k8s-mongo/terrafom
+    cd terrafom
     ```
 
 2. **Initialize Terraform**:
