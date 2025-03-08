@@ -89,9 +89,10 @@ Once the infraestructure is provided and return a cluster information you can us
 ## TODO
 
 - CI/CD Integration
-- EKS Cluster SSL/TLS Configuration
+- EKS Cluster and RDS SSL/TLS Configuration
 - Kafka Integration
 - Regional Resilence, deploying in more than just one aws region, currently just deploying on us-east-1
+- API Gateway integration to avoid exposing ALB directly over internet
 
 
 ## License
